@@ -3,107 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoloSports Basketball Ticket Booking</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('basketball-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 77, 153, 0.8);
-        }
-
-        .button-container button {
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #0084ff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-
-        .button-container button:hover {
-            background-color: #005f99;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-
-        .content-section {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background-color: #444; /* Changed color to dark gray for better visibility */
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        label, select, input[type="date"], input[type="number"], button[type="submit"] {
-            display: block;
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-        }
-    </style>
+    <title>Welcome to HoloSports</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Welcome to HoloSports Basketball</h1>
-        <div class="button-container">
-            <button onclick="window.location.href='about.html'">About</button>
-            <button onclick="window.location.href='book.html'">Book Tickets</button>
-            <button onclick="window.location.href='contact.html'">Contact</button>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="book.html">Book Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="about" class="content-section">
-        <h2>About HoloSports</h2>
-        <p>At HoloSports, we use cutting-edge holographic technology to offer immersive sporting experiences, making every game feel like a home game.</p>
-    </section>
-    <section id="booking-form" class="content-section">
-        <h2>Book Your Tickets</h2>
-        <form>
-            <label for="team">Select NBA Team:</label>
-            <select id="team" name="team">
-                <!-- All NBA teams -->
-                <option value="hawks">Atlanta Hawks</option>
-                <option value="celtics">Boston Celtics</option>
-                <!-- Add other teams as needed -->
-            </select>
-            <label for="date">Game Date:</label>
-            <input type="date" id="date" name="date">
-            <label for="tickets">Number of Tickets:</label>
-            <input type="number" id="tickets" name="tickets" min="1" max="10" value="1">
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <footer id="contact" class="content-section">
-        <h2>Contact Us</h2>
-        <p>Email us at info@holosports.com</p>
+    <main>
+        <h2>Experience the Game Like Never Before!</h2>
+        <p>Enjoy live basketball games in holographic projection.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 HoloSports. All rights reserved.</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var form = document.getElementById('booking-form');
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const team = document.getElementById('team').value;
-                const date = document.getElementById('date').value;
-                const ticketsNumber = document.getElementById('tickets').value;
-                alert(`You have successfully booked ${ticketsNumber} tickets for ${team} on ${date}.`);
-            });
-        });
-    </script>
 </body>
 </html>
