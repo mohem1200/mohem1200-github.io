@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloSports Basketball Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to HoloSports Basketball</h1>
+        <p>Experience the game like never before!</p>
+    </header>
+    <main>
+        <form id="booking-form">
+            <label for="event">Select Game:</label>
+            <select id="event" name="event">
+                <option value="game1">Lakers vs. Celtics</option>
+                <option value="game2">Heat vs. Bulls</option>
+                <option value="game3">Warriors vs. Knicks</option>
+            </select>
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" value="1">
+            <button type="submit">Book Tickets</button>
+        </form>
+    </main>
+    <footer>
+        <p>Contact us at info@holosports.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
