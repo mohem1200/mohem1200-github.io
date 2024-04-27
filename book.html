@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About HoloSports</title>
+    <title>Book Tickets</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>About HoloSports</h1>
+        <h1>Book Tickets</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="book.html">Book Tickets</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Our Mission</h2>
-        <p>At HoloSports, we leverage cutting-edge holographic technology to deliver immersive sporting experiences, making every game a home game.</p>
+        <form action="#" method="post">
+            <label for="team">Select NBA Team:</label>
+            <select id="team" name="team">
+                <option value="hawks">Atlanta Hawks</option>
+                <option value="celtics">Boston Celtics</option>
+                <!-- Add other teams as needed -->
+            </select>
+            <label for="date">Game Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10">
+            <button type="submit">Book Now</button>
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 HoloSports. All rights reserved.</p>
